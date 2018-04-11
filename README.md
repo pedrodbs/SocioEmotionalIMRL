@@ -20,7 +20,7 @@ Supported platforms:
 
 
 
-##Table of Contents
+## Table of Contents
 
   * [About](#about)
   * [Usage](#usage)
@@ -77,11 +77,11 @@ programRunner.Run(null);
 
 This will bring up a menu with several options:
 
-![Main menu](img\main-menu.png)
+![Main menu](img/main-menu.png)
 
 If we select the first option, `Single Test (...)`, another menu will appear:
 
-![Single test menu](img\single-type-menu.png)
+![Single test menu](img/single-type-menu.png)
 
 To simply run the test in the console (no visualization) and get back the results of all simulations/runs, select `Run on console`, otherwise selecting `Run visual form` will bring up an environment visualizer:
 
@@ -145,7 +145,7 @@ In the above example, the GP optimization procedure is going to first run severa
 
 Running this code will bring up the main menu:
 
-![Main menu](img\main-menu-gp.png)
+![Main menu](img/main-menu-gp.png)
 
 We now select `Optimization Test` and let the procedure complete. 
 
@@ -191,7 +191,7 @@ programRunner.Run(args);
 
 Running this code will bring up the main menu:
 
-![Main menu](D:/Users/Pedro/Work/code%20projects/phdcode/img/main-menu.png)
+![Main menu](img/main-menu.png)
 
 We select `Optimization Test` and let the procedure complete. 
 
