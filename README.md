@@ -85,7 +85,7 @@ If we select the first option, `Single Test (...)`, another menu will appear:
 
 To simply run the test in the console (no visualization) and get back the results of all simulations/runs, select `Run on console`, otherwise selecting `Run visual form` will bring up an environment visualizer:
 
-![Simulation visualizer](img\visualizer.png)
+![Simulation visualizer](img/visualizer.png)
 
 Here we can control each simulation in sequence by *pausing* the simulation, *advancing* a certain number of time-steps, checking the *fitness* of the agent, the *actions* chosen, etc. 
 
