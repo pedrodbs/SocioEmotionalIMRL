@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{50171F06-A01D-4D6F-ADFB-B7A11B27D125}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PS.Learning.Tests.RewardFunctionGPOptimization</RootNamespace>
+    <AssemblyName>PS.Learning.Tests.RewardFunctionGPOptimization</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>bin\Debug\</OutputPath>
+    <Optimize>false</Optimize>
+    <DefineConstants>DEBUG</DefineConstants>
+    <DebugType>full</DebugType>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <DebugSymbols>true</DebugSymbols>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>bin\Release\</OutputPath>
+    <Optimize>true</Optimize>
+    <DebugType>none</DebugType>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>PS.Learning.Tests.RewardFunctionGPOptimization.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RunPostBuildEvent>OnOutputUpdated</RunPostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugType>full</DebugType>
+    <WarningLevel>4</WarningLevel>
+    <Optimize>false</Optimize>
+    <Prefer32Bit>false</Prefer32Bit>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugType>none</DebugType>
+    <WarningLevel>4</WarningLevel>
+    <Optimize>false</Optimize>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AForge, Version=2.2.5.0, Culture=neutral, PublicKeyToken=c1db6ff4eaa06aeb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\ext\AForge.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Genetic, Version=2.2.4.0, Culture=neutral, PublicKeyToken=4336634eeb41b69b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\ext\AForge.Genetic.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Domain\Agents\GPHungerThirstAgent.cs" />
+    <Compile Include="Domain\Agents\GPLairsAgent.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Testing\EmotionalGPOptimizationTestFactory.cs" />
+    <Compile Include="Testing\EmotionalGPTestsConfig.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\PS.Utilities\Core\PS.Utilities.Core.csproj">
+      <Project>{991ce2b9-9ae4-4f1e-9eb8-849e894349c0}</Project>
+      <Name>PS.Utilities.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\PS.Utilities\IO\PS.Utilities.IO.csproj">
+      <Project>{28421794-137a-4e51-96b3-1972cc5d9945}</Project>
+      <Name>PS.Utilities.IO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Emotions\PS.Learning.IMRL.Emotions.csproj">
+      <Project>{46504CB7-1614-4386-9F42-0C3C898DE6FD}</Project>
+      <Name>PS.Learning.IMRL.Emotions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\EvolutionaryComputation\PS.Learning.EvolutionaryComputation.csproj">
+      <Project>{E9E0687E-E924-4355-9923-6BFA99638D3F}</Project>
+      <Name>PS.Learning.EvolutionaryComputation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Forms\PS.Learning.Forms.csproj">
+      <Project>{816E9695-0C0F-41BF-8D05-A5FF1BB2BF67}</Project>
+      <Name>PS.Learning.Forms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\IMRL.EC\PS.Learning.IMRL.EC.csproj">
+      <Project>{C77FE206-A9BE-414A-8A42-78A4C711688A}</Project>
+      <Name>PS.Learning.IMRL.EC</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\IMRL\PS.Learning.IMRL.csproj">
+      <Project>{5277A686-21DD-4B14-9F1D-54C1F2BFCF0C}</Project>
+      <Name>PS.Learning.IMRL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Core\PS.Learning.Core.csproj">
+      <Project>{BC34D436-05BC-4AC1-9DF0-616DDD2EB9EF}</Project>
+      <Name>PS.Learning.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EmotionalOptimization\PS.Learning.Tests.EmotionalOptimization.csproj">
+      <Project>{35CF2509-FF9A-43DB-B4FD-A46225D2AC41}</Project>
+      <Name>PS.Learning.Tests.EmotionalOptimization</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

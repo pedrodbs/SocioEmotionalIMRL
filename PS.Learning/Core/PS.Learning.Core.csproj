@@ -1,0 +1,266 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{BC34D436-05BC-4AC1-9DF0-616DDD2EB9EF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PS.Learning.Core</RootNamespace>
+    <AssemblyName>PS.Learning.Core</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>bin\Debug\</OutputPath>
+    <Optimize>false</Optimize>
+    <DefineConstants>DEBUG</DefineConstants>
+    <DebugType>full</DebugType>
+    <WarningLevel>4</WarningLevel>
+    <DebugSymbols>true</DebugSymbols>
+    <Prefer32Bit>false</Prefer32Bit>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>bin\Release\</OutputPath>
+    <Optimize>true</Optimize>
+    <DefineConstants>TRACE</DefineConstants>
+    <DebugType>pdbonly</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugType>full</DebugType>
+    <WarningLevel>4</WarningLevel>
+    <Optimize>false</Optimize>
+    <DebugSymbols>true</DebugSymbols>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugType>none</DebugType>
+    <WarningLevel>4</WarningLevel>
+    <Optimize>false</Optimize>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CommandLine, Version=1.9.71.2, Culture=neutral, PublicKeyToken=de6f01bd326f8c32, processorArchitecture=MSIL">
+      <HintPath>..\packages\CommandLineParser.1.9.71\lib\net45\CommandLine.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MathNet.Numerics, Version=4.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MathNet.Numerics.4.4.0\lib\net40\MathNet.Numerics.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="QuickGraph">
+      <HintPath>..\packages\QuickGraph.3.6.61119.7\lib\net4\QuickGraph.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Drawing" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Domain\Actions\CellAction.cs" />
+    <Compile Include="Domain\Actions\IPolicy.cs" />
+    <Compile Include="Domain\Actions\Move.cs" />
+    <Compile Include="Domain\Actions\Action.cs" />
+    <Compile Include="Domain\Actions\Policy.cs" />
+    <Compile Include="Domain\Agents\Agent.cs" />
+    <Compile Include="Domain\Agents\IAgent.cs" />
+    <Compile Include="Domain\Agents\ICellAgent.cs" />
+    <Compile Include="Domain\Agents\ISituatedAgent.cs" />
+    <Compile Include="Domain\Agents\SituatedAgent.cs" />
+    <Compile Include="Domain\Cells\ICellElement.cs" />
+    <Compile Include="Domain\Cells\InfoCellElement.cs" />
+    <Compile Include="Domain\Cells\Location.cs" />
+    <Compile Include="Domain\Managers\Behavior\DirectPolicyBehaviorManager.cs" />
+    <Compile Include="Domain\Managers\Learning\PolicyAdjustLearningManager.cs" />
+    <Compile Include="Domain\Environments\SingleAgentEnvironment.cs" />
+    <Compile Include="Domain\Managers\Behavior\BoltzmannBehaviorManager.cs" />
+    <Compile Include="Domain\Managers\Behavior\TwoPhaseBehaviorManager.cs" />
+    <Compile Include="Domain\Managers\Behavior\StateDecreaseEpsilonBehaviorManager.cs" />
+    <Compile Include="Domain\Managers\IManager.cs" />
+    <Compile Include="Domain\Managers\Learning\CertaintyEquivalentLearningManager.cs" />
+    <Compile Include="Domain\Managers\Learning\PrioritySweepLearningManager.cs" />
+    <Compile Include="Domain\Managers\Learning\LearningManager.cs" />
+    <Compile Include="Domain\Managers\Motivation\EnvironmentMotivationManager.cs" />
+    <Compile Include="Domain\Managers\Motivation\IMotivationManager.cs" />
+    <Compile Include="Domain\Managers\Motivation\MotivationManager.cs" />
+    <Compile Include="Domain\Managers\Perception\IPerceptionManager.cs" />
+    <Compile Include="Domain\Managers\Perception\PerceptionManager.cs" />
+    <Compile Include="Domain\Managers\Perception\SingleStatePerceptionManager.cs" />
+    <Compile Include="Domain\Memories\IMemory.cs" />
+    <Compile Include="Domain\Memories\StochasticTransitionLTM.cs" />
+    <Compile Include="Domain\Memories\CellAgentLTM.cs" />
+    <Compile Include="Domain\Memories\ILongTermMemory.cs" />
+    <Compile Include="Domain\Memories\IShortTermMemory.cs" />
+    <Compile Include="Domain\Memories\StringLTM.cs" />
+    <Compile Include="Domain\States\IStimuliState.cs" />
+    <Compile Include="Domain\States\State.cs" />
+    <Compile Include="Domain\Managers\Behavior\DecreaseEpsilonGreedyBehaviorManager.cs" />
+    <Compile Include="Domain\States\PartiallyObservableState.cs" />
+    <Compile Include="Domain\States\StringState.cs" />
+    <Compile Include="Testing\CondorScriptBuilder.cs" />
+    <Compile Include="Testing\Config\IStochasticTestsConfig.cs" />
+    <Compile Include="Testing\Config\Parameters\ArrayParameter.cs" />
+    <Compile Include="Testing\Config\Parameters\IArrayParameter.cs" />
+    <Compile Include="Testing\Config\Scenarios\IFitnessScenario.cs" />
+    <Compile Include="Testing\Config\ISimAnnTestConfig.cs" />
+    <Compile Include="Testing\Config\IStochasticOptimTestsConfig.cs" />
+    <Compile Include="Testing\Config\Scenarios\IStochasticScenario.cs" />
+    <Compile Include="Testing\Config\Scenarios\StochasticScenario.cs" />
+    <Compile Include="Testing\ICsvConvertible.cs" />
+    <Compile Include="Testing\OptimizationScheme.cs" />
+    <Compile Include="Testing\Runners\ParallelOptimTestRunnner.cs" />
+    <Compile Include="Testing\Runners\SingleTestRunner.cs" />
+    <Compile Include="Testing\StochasticOptimization\IStochasticOptimizationTest.cs" />
+    <Compile Include="Testing\MultipleTests\StochasticParallelOptimTest.cs" />
+    <Compile Include="Testing\StochasticOptimization\SimulatedAnnealingOptimTest.cs" />
+    <Compile Include="Testing\StochasticOptimization\StochasticOptimzationTest.cs" />
+    <Compile Include="Testing\Simulations\CumulativeFitnessFunction.cs" />
+    <Compile Include="Testing\Simulations\ExtrinsicRewardFitnessFunction.cs" />
+    <Compile Include="Testing\Simulations\IAgentFitnessFunction.cs" />
+    <Compile Include="Testing\ITest.cs" />
+    <Compile Include="Testing\Config\Parameters\ITestParameters.cs" />
+    <Compile Include="Testing\Config\Scenarios\IScenario.cs" />
+    <Compile Include="Testing\Config\ITestsConfig.cs" />
+    <Compile Include="Testing\MultipleScenario.cs" />
+    <Compile Include="Testing\MultipleTests\IOptimizationTestFactory.cs" />
+    <Compile Include="Testing\MultipleTests\ListFitnessTest.cs" />
+    <Compile Include="Testing\MultipleTests\ParallelOptimizationTest.cs" />
+    <Compile Include="Testing\MultipleTests\OptimizationTestFactory.cs" />
+    <Compile Include="Testing\MultipleTests\SelectBestFitnessTest.cs" />
+    <Compile Include="Testing\MultipleTests\SelectTopFitnessTest.cs" />
+    <Compile Include="Testing\PerformanceMeasure.cs" />
+    <Compile Include="Testing\Simulations\FitnessSimulation.cs" />
+    <Compile Include="Testing\Simulations\ISimulation.cs" />
+    <Compile Include="Testing\Simulations\Simulation.cs" />
+    <Compile Include="Testing\SingleTests\ParallelTest.cs" />
+    <Compile Include="Testing\SingleTests\SequentialTest.cs" />
+    <Compile Include="Testing\SingleTests\FitnessTest.cs" />
+    <Compile Include="Testing\SingleTests\SingleTest.cs" />
+    <Compile Include="Testing\TestingUtil.cs" />
+    <Compile Include="Testing\TestMeasure.cs" />
+    <Compile Include="Testing\TestMeasureList.cs" />
+    <Compile Include="Testing\TestParameterRanker.cs" />
+    <Compile Include="Testing\Config\Scenarios\SingleScenario.cs" />
+    <Compile Include="Testing\Config\TestsConfig.cs" />
+    <Compile Include="Domain\Cells\Cell.cs" />
+    <Compile Include="Domain\Cells\CellElement.cs" />
+    <Compile Include="Domain\Managers\Behavior\BehaviorManager.cs" />
+    <Compile Include="Domain\Memories\CellStateLTM.cs" />
+    <Compile Include="Domain\Managers\Learning\QLearningManager.cs" />
+    <Compile Include="Domain\Memories\LongTermMemory.cs" />
+    <Compile Include="Domain\Managers\Manager.cs" />
+    <Compile Include="Domain\Managers\Behavior\EpsilonGreedyBehaviorManager.cs" />
+    <Compile Include="Domain\Managers\Perception\NeighbourCellPerceptionManager.cs" />
+    <Compile Include="Domain\Memories\ShortTermMemory.cs" />
+    <Compile Include="Domain\Need.cs" />
+    <Compile Include="Domain\States\CellState.cs" />
+    <Compile Include="Domain\Agents\CellAgent.cs" />
+    <Compile Include="Domain\Actions\IAction.cs" />
+    <Compile Include="Domain\States\IState.cs" />
+    <Compile Include="Domain\Actions\MoveDown.cs" />
+    <Compile Include="Domain\Actions\MoveLeft.cs" />
+    <Compile Include="Domain\Actions\MoveRight.cs" />
+    <Compile Include="Domain\Actions\MoveUp.cs" />
+    <Compile Include="Domain\Sensation.cs" />
+    <Compile Include="Domain\Environments\IEnvironment.cs" />
+    <Compile Include="Domain\Environments\Environment.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Testing\Runners\TestRunner.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Domain\Managers\Perception\CellPerceptionManager.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\PS.Utilities\Collections\PS.Utilities.Collections.csproj">
+      <Project>{C85C22C5-260E-47DD-A44B-E59B1DC23099}</Project>
+      <Name>PS.Utilities.Collections</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\PS.Utilities\Core\PS.Utilities.Core.csproj">
+      <Project>{991CE2B9-9AE4-4F1E-9EB8-849E894349C0}</Project>
+      <Name>PS.Utilities.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\PS.Utilities\Forms\PS.Utilities.Forms.csproj">
+      <Project>{188b1a0d-e65e-4c0c-9efc-6928b06151fd}</Project>
+      <Name>PS.Utilities.Forms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\PS.Utilities\IO\PS.Utilities.IO.csproj">
+      <Project>{28421794-137A-4E51-96B3-1972CC5D9945}</Project>
+      <Name>PS.Utilities.IO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\PS.Utilities\Math\PS.Utilities.Math.csproj">
+      <Project>{F909EFD6-17DA-4836-9349-17924FB5AC88}</Project>
+      <Name>PS.Utilities.Math</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{35CF2509-FF9A-43DB-B4FD-A46225D2AC41}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PS.Learning.Tests.EmotionalOptimization</RootNamespace>
+    <AssemblyName>PS.Learning.Tests.EmotionalOptimization</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Commandlineparameters>../config/ 8 16 100 1 -0.1 0.10 -0.1 0.10 0.60</Commandlineparameters>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>bin\Debug\</OutputPath>
+    <Optimize>false</Optimize>
+    <DefineConstants>DEBUG</DefineConstants>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <DebugType>full</DebugType>
+    <WarningLevel>4</WarningLevel>
+    <DebugSymbols>true</DebugSymbols>
+    <Prefer32Bit>false</Prefer32Bit>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>bin\Release\</OutputPath>
+    <Optimize>true</Optimize>
+    <DefineConstants>TRACE</DefineConstants>
+    <DebugType>pdbonly</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>PS.Learning.Tests.EmotionalOptimization.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugType>none</DebugType>
+    <WarningLevel>4</WarningLevel>
+    <Optimize>false</Optimize>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugType>none</DebugType>
+    <WarningLevel>4</WarningLevel>
+    <Optimize>false</Optimize>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MathNet.Numerics, Version=4.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\MathNet.Numerics.4.4.0\lib\net40\MathNet.Numerics.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Domain\Agents\IHungerThirstAgent.cs" />
+    <Compile Include="Domain\Agents\ILairsAgent.cs" />
+    <Compile Include="Domain\Agents\LairsAgent.cs" />
+    <Compile Include="Domain\Agents\HungerThirstAgent.cs" />
+    <Compile Include="Domain\Agents\PacmanAgent.cs" />
+    <Compile Include="Domain\Ghosts\Ghost.cs" />
+    <Compile Include="Domain\Environments\PacmanEnvironment.cs" />
+    <Compile Include="Domain\Environments\LairsEnvironment.cs" />
+    <Compile Include="Domain\Environments\HungerThirstEnvironment.cs" />
+    <Compile Include="Domain\Environments\PoisonedSeasonEnvironment.cs" />
+    <Compile Include="Domain\Environments\MovingPreysEnvironment.cs" />
+    <Compile Include="Domain\Environments\FixedStartRabbitHareEnvironment.cs" />
+    <Compile Include="Domain\Environments\PreySeasonEnvironment.cs" />
+    <Compile Include="Domain\Environments\PersistenceEnvironment.cs" />
+    <Compile Include="Domain\Ghosts\SmartGhost.cs" />
+    <Compile Include="Domain\Ghosts\KeeperGhost.cs" />
+    <Compile Include="Domain\Managers\LairsPerceptionManager.cs" />
+    <Compile Include="Domain\Managers\HungerThirstPerceptionManager.cs" />
+    <Compile Include="Domain\Actions\OpenLair.cs" />
+    <Compile Include="Domain\Managers\PacmanPerceptionManager.cs" />
+    <Compile Include="Domain\RabbitLair.cs" />
+    <Compile Include="Forms\PacmanLightSimForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PacmanLightSimForm.Designer.cs">
+      <DependentUpon>PacmanLightSimForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Testing\EmotionalSingleTestRunner.cs" />
+    <Compile Include="Testing\EmotionalTestsConfig.cs" />
+    <Compile Include="Testing\IPacmanScenario.cs" />
+    <Compile Include="Testing\PacmanScenario.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\PS.Utilities\Collections\PS.Utilities.Collections.csproj">
+      <Project>{c85c22c5-260e-47dd-a44b-e59b1dc23099}</Project>
+      <Name>PS.Utilities.Collections</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\PS.Utilities\Core\PS.Utilities.Core.csproj">
+      <Project>{991ce2b9-9ae4-4f1e-9eb8-849e894349c0}</Project>
+      <Name>PS.Utilities.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\PS.Utilities\Forms\PS.Utilities.Forms.csproj">
+      <Project>{188b1a0d-e65e-4c0c-9efc-6928b06151fd}</Project>
+      <Name>PS.Utilities.Forms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\PS.Utilities\IO\PS.Utilities.IO.csproj">
+      <Project>{28421794-137a-4e51-96b3-1972cc5d9945}</Project>
+      <Name>PS.Utilities.IO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\PS.Utilities\Math\PS.Utilities.Math.csproj">
+      <Project>{F909EFD6-17DA-4836-9349-17924FB5AC88}</Project>
+      <Name>PS.Utilities.Math</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Emotions\PS.Learning.IMRL.Emotions.csproj">
+      <Project>{46504CB7-1614-4386-9F42-0C3C898DE6FD}</Project>
+      <Name>PS.Learning.IMRL.Emotions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Forms\PS.Learning.Forms.csproj">
+      <Project>{816E9695-0C0F-41BF-8D05-A5FF1BB2BF67}</Project>
+      <Name>PS.Learning.Forms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\IMRL\PS.Learning.IMRL.csproj">
+      <Project>{5277A686-21DD-4B14-9F1D-54C1F2BFCF0C}</Project>
+      <Name>PS.Learning.IMRL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Core\PS.Learning.Core.csproj">
+      <Project>{BC34D436-05BC-4AC1-9DF0-616DDD2EB9EF}</Project>
+      <Name>PS.Learning.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Forms\PacmanLightSimForm.resx">
+      <DependentUpon>PacmanLightSimForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Resources\life.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

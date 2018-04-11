@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{816E9695-0C0F-41BF-8D05-A5FF1BB2BF67}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PS.Learning.Forms</RootNamespace>
+    <AssemblyName>PS.Learning.Forms</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugType>full</DebugType>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <WarningLevel>4</WarningLevel>
+    <Optimize>false</Optimize>
+    <DebugSymbols>true</DebugSymbols>
+    <Prefer32Bit>false</Prefer32Bit>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>bin\Release\</OutputPath>
+    <Optimize>true</Optimize>
+    <DebugType>none</DebugType>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugType>full</DebugType>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <WarningLevel>4</WarningLevel>
+    <Optimize>true</Optimize>
+    <DebugSymbols>true</DebugSymbols>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugType>none</DebugType>
+    <WarningLevel>4</WarningLevel>
+    <Optimize>false</Optimize>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AForge, Version=2.2.5.0, Culture=neutral, PublicKeyToken=c1db6ff4eaa06aeb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ext\AForge.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Imaging, Version=2.2.5.0, Culture=neutral, PublicKeyToken=ba8ddea9676ca48b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ext\AForge.Imaging.dll</HintPath>
+    </Reference>
+    <Reference Include="MathNet.Numerics, Version=4.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MathNet.Numerics.4.4.0\lib\net40\MathNet.Numerics.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Numerics" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ProgramRunner.cs" />
+    <Compile Include="Simulation\AgentInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Simulation\AgentInfoForm.Designer.cs">
+      <DependentUpon>AgentInfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Simulation\CellControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Simulation\EnvironmentControl.cs" />
+    <Compile Include="IControlable.cs" />
+    <Compile Include="Simulation\ISimulationForm.cs" />
+    <Compile Include="Simulation\LimitedUserCellControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Simulation\SimulationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Testing\FormsParallelOptimTestRunnner.cs" />
+    <Compile Include="Simulation\SimulationDisplayForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Simulation\SimulationDisplayForm.designer.cs">
+      <DependentUpon>SimulationDisplayForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Simulation\SimulationControlForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Simulation\SimulationControlForm.Designer.cs">
+      <DependentUpon>SimulationControlForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Testing\FormsSingleTestRunner.cs" />
+    <Compile Include="Util.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\PS.Utilities\Core\PS.Utilities.Core.csproj">
+      <Project>{991CE2B9-9AE4-4F1E-9EB8-849E894349C0}</Project>
+      <Name>PS.Utilities.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\PS.Utilities\Forms\PS.Utilities.Forms.csproj">
+      <Project>{188b1a0d-e65e-4c0c-9efc-6928b06151fd}</Project>
+      <Name>PS.Utilities.Forms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\PS.Utilities\IO\PS.Utilities.IO.csproj">
+      <Project>{28421794-137a-4e51-96b3-1972cc5d9945}</Project>
+      <Name>PS.Utilities.IO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\PS.Utilities\Math\PS.Utilities.Math.csproj">
+      <Project>{f909efd6-17da-4836-9349-17924fb5ac88}</Project>
+      <Name>PS.Utilities.Math</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Social\PS.Learning.Social.csproj">
+      <Project>{977CA998-47E3-4E8E-B57E-090F22F0BEB6}</Project>
+      <Name>PS.Learning.Social</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Core\PS.Learning.Core.csproj">
+      <Project>{BC34D436-05BC-4AC1-9DF0-616DDD2EB9EF}</Project>
+      <Name>PS.Learning.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Simulation\AgentInfoForm.resx">
+      <DependentUpon>AgentInfoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Simulation\SimulationDisplayForm.resx">
+      <DependentUpon>SimulationDisplayForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Simulation\SimulationControlForm.resx">
+      <DependentUpon>SimulationControlForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Simulation\SimulationForm.resx">
+      <DependentUpon>SimulationForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

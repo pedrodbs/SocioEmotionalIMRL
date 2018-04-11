@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{64E919EE-D3A4-407A-8967-0038F195268A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PS.Utilities</RootNamespace>
+    <AssemblyName>PS.Utilities</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="CarlosAg.ExcelXmlWriter">
+      <HintPath>..\externals\CarlosAg.ExcelXmlWriter.dll</HintPath>
+    </Reference>
+    <Reference Include="CommandLine, Version=1.9.71.2, Culture=neutral, PublicKeyToken=de6f01bd326f8c32">
+      <HintPath>packages\CommandLineParser.1.9.71\lib\net45\CommandLine.dll</HintPath>
+    </Reference>
+    <Reference Include="MathNet.Numerics, Version=3.10.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>packages\MathNet.Numerics.3.10.0\lib\net40\MathNet.Numerics.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed">
+      <HintPath>packages\Newtonsoft.Json.8.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="protobuf-net, Version=2.0.0.668, Culture=neutral, PublicKeyToken=257b51d87d2e4d67">
+      <HintPath>packages\protobuf-net.2.0.0.668\lib\net40\protobuf-net.dll</HintPath>
+    </Reference>
+    <Reference Include="OxyPlot, Version=1.0.0.0, Culture=neutral, PublicKeyToken=638079a8f0bd61e9">
+      <HintPath>..\..\Skinner\packages\OxyPlot.Core.1.0.0-unstable1983\lib\net45\OxyPlot.dll</HintPath>
+    </Reference>
+    <Reference Include="OxyPlot.WindowsForms, Version=1.0.0.0, Culture=neutral, PublicKeyToken=245eacd6b5d2d338">
+      <HintPath>..\..\Skinner\packages\OxyPlot.WindowsForms.1.0.0-unstable1983\lib\net45\OxyPlot.WindowsForms.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Collections\ArrayUtil.cs" />
+    <Compile Include="Collections\SortingUtil.cs" />
+    <Compile Include="Collections\StepInterval.cs" />
+    <Compile Include="Core\Conversion\IValueConvertible.cs" />
+    <Compile Include="Core\Conversion\ValueConverter.cs" />
+    <Compile Include="Core\EnumUtil.cs" />
+    <Compile Include="Core\IIdentifiableObject.cs" />
+    <Compile Include="Core\IInitializable.cs" />
+    <Compile Include="Core\IProgressHandler.cs" />
+    <Compile Include="Core\IResetable.cs" />
+    <Compile Include="Core\IUpdatable.cs" />
+    <Compile Include="Core\LogWriter.cs" />
+    <Compile Include="Core\NetUtil.cs" />
+    <Compile Include="Core\PerformanceMeasure.cs" />
+    <Compile Include="Core\ProcessUtil.cs" />
+    <Compile Include="Core\ProgressBarConsole.cs" />
+    <Compile Include="Core\Range.cs" />
+    <Compile Include="Core\ReflectionUtil.cs" />
+    <Compile Include="Core\StringUtil.cs" />
+    <Compile Include="Forms\ChooseOptionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ChooseOptionForm.Designer.cs">
+      <DependentUpon>ChooseOptionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ColorInfoExtensions.cs" />
+    <Compile Include="Forms\CustomToolStripRenderer.cs" />
+    <Compile Include="Forms\FormsUtil.cs" />
+    <Compile Include="Forms\FormUpdater.cs" />
+    <Compile Include="Forms\ListViewItemComparer.cs" />
+    <Compile Include="Forms\Math\PlottingUtil.cs" />
+    <Compile Include="Forms\Math\QuantitiesChart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Math\QuantitiesChart.Designer.cs">
+      <DependentUpon>QuantitiesChart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Math\QuantitiesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Math\QuantitiesForm.Designer.cs">
+      <DependentUpon>QuantitiesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Math\QuantitiesFormUpdater.cs" />
+    <Compile Include="Forms\Math\StatisticsCollectionExtensions.cs" />
+    <Compile Include="Forms\Math\StatisticsExtensions.cs" />
+    <Compile Include="Forms\ProgressForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ProgressForm.designer.cs">
+      <DependentUpon>ProgressForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ProgressFormUpdater.cs" />
+    <Compile Include="Forms\SortableListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\TimeOutMessageBox.cs" />
+    <Compile Include="Forms\YesNoAllMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\YesNoAllMessageBox.Designer.cs">
+      <DependentUpon>YesNoAllMessageBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IO\CmdUtil.cs" />
+    <Compile Include="IO\ExclusiveFileWriter.cs" />
+    <Compile Include="IO\Parsing\ArgumentsParser.cs" />
+    <Compile Include="IO\Parsing\IArgumentsParsable.cs" />
+    <Compile Include="IO\PathUtil.cs" />
+    <Compile Include="IO\RecycleBinUtil.cs" />
+    <Compile Include="IO\Serialization\BinarySerializer.cs" />
+    <Compile Include="IO\Serialization\CloneUtil.cs" />
+    <Compile Include="IO\Serialization\ColorInfo.cs" />
+    <Compile Include="IO\Serialization\IXmlSerializable.cs" />
+    <Compile Include="IO\Serialization\JsonUtil.cs" />
+    <Compile Include="IO\Serialization\PropertyWriter.cs" />
+    <Compile Include="IO\Serialization\ProtobufUtil.cs" />
+    <Compile Include="IO\Serialization\SerializableDictionary.cs" />
+    <Compile Include="IO\Serialization\XmlResource.cs" />
+    <Compile Include="IO\Serialization\XmlUtil.cs" />
+    <Compile Include="Math\ExcelUtil.cs" />
+    <Compile Include="Math\Functions.cs" />
+    <Compile Include="Math\KalmanFilter.cs" />
+    <Compile Include="Math\NumericArrayUtil.cs" />
+    <Compile Include="Math\SampleStatistic.cs" />
+    <Compile Include="Math\StatisticalQuantity.cs" />
+    <Compile Include="Math\StatisticsCollection.cs" />
+    <Compile Include="Math\TTest.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Security\EncryptUtil.cs" />
+    <Compile Include="Security\FileWipe.cs" />
+    <Compile Include="Security\RandomPasswordGenerator.cs" />
+    <Compile Include="Security\SecurityUtil.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Forms\app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Forms\ChooseOptionForm.resx">
+      <DependentUpon>ChooseOptionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Math\QuantitiesChart.resx">
+      <DependentUpon>QuantitiesChart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Math\QuantitiesForm.resx">
+      <DependentUpon>QuantitiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProgressForm.resx">
+      <DependentUpon>ProgressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\YesNoAllMessageBox.resx">
+      <DependentUpon>YesNoAllMessageBox.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
