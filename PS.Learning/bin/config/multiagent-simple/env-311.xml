@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<environment num-cols="5" num-rows="3">
+  <color r="255" g="255" b="255" a="255" />
+  <cell-elements>
+    <cell-element id="fence-bot-left" description="" reward="0" visible="True" walkable="False" smell="False" image-path="../../../../bin/resources/lab/fence-bot-left.png">
+      <color r="0" g="100" b="0" a="255" />
+    </cell-element>
+    <cell-element id="fence-bot-right" description="" reward="0" visible="True" walkable="False" smell="False" image-path="../../../../bin/resources/lab/fence-bot-right.png">
+      <color r="0" g="100" b="0" a="255" />
+    </cell-element>
+    <cell-element id="fence-horiz" description="" reward="0" visible="True" walkable="False" smell="False" image-path="../../../../bin/resources/lab/fence-horiz.png">
+      <color r="0" g="100" b="0" a="255" />
+    </cell-element>
+    <cell-element id="fence-top-left" description="" reward="0" visible="True" walkable="False" smell="False" image-path="../../../../bin/resources/lab/fence-top-left.png">
+      <color r="0" g="100" b="0" a="255" />
+    </cell-element>
+    <cell-element id="fence-top-right" description="" reward="0" visible="True" walkable="False" smell="False" image-path="../../../../bin/resources/lab/fence-top-right.png">
+      <color r="0" g="100" b="0" a="255" />
+    </cell-element>
+    <cell-element id="fence-vert" description="" reward="0" visible="True" walkable="False" smell="False" image-path="../../../../bin/resources/lab/fence-vert.png">
+      <color r="0" g="100" b="0" a="255" />
+    </cell-element>
+  </cell-elements>
+  <cells>
+    <cell id="0,0" description="" y-coord="0" x-coord="0">
+      <contents>
+        <id>fence-top-left</id>
+      </contents>
+    </cell>
+    <cell id="0,1" description="" y-coord="1" x-coord="0">
+      <contents>
+        <id>fence-vert</id>
+      </contents>
+    </cell>
+    <cell id="0,2" description="" y-coord="2" x-coord="0">
+      <contents>
+        <id>fence-bot-left</id>
+      </contents>
+    </cell>
+    
+    <cell id="1,0" description="" y-coord="0" x-coord="1">
+      <contents>
+        <id>fence-horiz</id>
+      </contents>
+    </cell>
+    <cell id="1,1" description="start-position" y-coord="1" x-coord="1">
+      <contents />
+    </cell>
+    <cell id="1,2" description="" y-coord="2" x-coord="1">
+      <contents>
+        <id>fence-horiz</id>
+      </contents>
+    </cell>
+    
+    <cell id="2,0" description="" y-coord="0" x-coord="2">
+      <contents>
+        <id>fence-horiz</id>
+      </contents>
+    </cell>
+    <cell id="2,1" description="" y-coord="1" x-coord="2">
+      <contents />
+    </cell>
+    <cell id="2,2" description="" y-coord="2" x-coord="2">
+      <contents>
+        <id>fence-horiz</id>
+      </contents>
+    </cell>
+    
+    <cell id="3,0" description="" y-coord="0" x-coord="3">
+      <contents>
+        <id>fence-horiz</id>
+      </contents>
+    </cell>
+    <cell id="3,1" description="food-location" y-coord="1" x-coord="3">
+      <contents />
+    </cell>
+    <cell id="3,2" description="" y-coord="2" x-coord="3">
+      <contents>
+        <id>fence-horiz</id>
+      </contents>
+    </cell>
+
+    <cell id="4,0" description="" y-coord="0" x-coord="4">
+      <contents>
+        <id>fence-top-right</id>
+      </contents>
+    </cell>
+    <cell id="4,1" description="" y-coord="1" x-coord="4">
+      <contents>
+        <id>fence-vert</id>
+      </contents>
+    </cell>
+    <cell id="4,2" description="" y-coord="2" x-coord="4">
+      <contents>
+        <id>fence-bot-right</id>
+      </contents>
+    </cell>
+  </cells>
+</environment>

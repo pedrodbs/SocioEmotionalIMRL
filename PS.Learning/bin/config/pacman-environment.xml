@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<environment num-cols="7" num-rows="7">
+  <color r="0" g="0" b="0" a="255" />
+  <cell-elements>
+    <cell-element id="pac-bot-left" image-path="../../../../bin/resources/pacman/pac-bot-left.png" description="" reward="0" visible="True" walkable="False" smell="False">
+      <color r="0" g="0" b="255" a="255" />
+    </cell-element>
+    <cell-element id="pac-bot-right" image-path="../../../../bin/resources/pacman/pac-bot-right.png" description="" reward="0" visible="True" walkable="False" smell="False">
+      <color r="0" g="0" b="255" a="255" />
+    </cell-element>
+    <cell-element id="pac-horiz" image-path="../../../../bin/resources/pacman/pac-horiz.png" description="" reward="0" visible="True" walkable="False" smell="False">
+      <color r="0" g="0" b="255" a="255" />
+    </cell-element>
+    <cell-element id="pac-horiz-left" image-path="../../../../bin/resources/pacman/pac-horiz-left.png" description="" reward="0" visible="True" walkable="False" smell="False">
+      <color r="0" g="0" b="255" a="255" />
+    </cell-element>
+    <cell-element id="pac-horiz-right" image-path="../../../../bin/resources/pacman/pac-horiz-right.png" description="" reward="0" visible="True" walkable="False" smell="False">
+      <color r="0" g="0" b="255" a="255" />
+    </cell-element>
+    <cell-element id="pac-top-left" image-path="../../../../bin/resources/pacman/pac-top-left.png" description="" reward="0" visible="True" walkable="False" smell="False">
+      <color r="0" g="0" b="255" a="255" />
+    </cell-element>
+    <cell-element id="pac-top-right" image-path="../../../../bin/resources/pacman/pac-top-right.png" description="" reward="0" visible="True" walkable="False" smell="False">
+      <color r="0" g="0" b="255" a="255" />
+    </cell-element>
+    <cell-element id="pac-vert" image-path="../../../../bin/resources/pacman/pac-vert.png" description="" reward="0" visible="True" walkable="False" smell="False">
+      <color r="0" g="0" b="255" a="255" />
+    </cell-element>
+    <cell-element id="pac-vert-bot" image-path="../../../../bin/resources/pacman/pac-vert-bot.png" description="" reward="0" visible="True" walkable="False" smell="False">
+      <color r="0" g="0" b="255" a="255" />
+    </cell-element>
+    <cell-element id="pac-vert-top" image-path="../../../../bin/resources/pacman/pac-vert-top.png" description="" reward="0" visible="True" walkable="False" smell="False">
+      <color r="0" g="0" b="255" a="255" />
+    </cell-element>
+    <cell-element id="dot" image-path="../../../../bin/resources/pacman/dot.png" description="" reward="0.1" visible="True" walkable="True" smell="True">
+      <color r="255" g="255" b="102" a="255" />
+    </cell-element>
+  </cell-elements>
+  <cells>
+    <cell id="cell" description="" y-coord="0" x-coord="0">
+      <contents>
+        <id>pac-top-left</id>
+      </contents>
+    </cell>
+    <cell id="cell" description="" y-coord="1" x-coord="0">
+      <contents>
+        <id>pac-vert</id>
+      </contents>
+    </cell>
+    <cell id="cell" description="" y-coord="2" x-coord="0">
+      <contents>
+        <id>pac-vert-bot</id>
+      </contents>
+    </cell>
+    <cell id="cell" description="" y-coord="3" x-coord="0">
+      <contents>
+        <id>dot</id>
+      </contents>
+    </cell>
+    <cell id="cell" description="" y-coord="4" x-coord="0">
+      <contents>
+        <id>pac-vert-top</id>
+      </contents>
+    </cell>
+    <cell id="cell" description="" y-coord="5" x-coord="0">
+      <contents>
+        <id>pac-vert</id>
+      </contents>
+    </cell>
+    <cell id="cell" description="" y-coord="6" x-coord="0">
+      <contents>
+        <id>pac-bot-left</id>
+      </contents>
+    </cell>
+
+    <cell id="cell" description="" y-coord="0" x-coord="1">
+      <contents>
+        <id>pac-horiz</id>
+      </contents>
+    </cell>
+    <cell id="cell" description="" y-coord="1" x-coord="1">
+      <contents>
+        <id>dot</id>
+      </contents>
+    </cell>
+    <cell id="cell" description="" y-coord="2" x-coord="1">
+      <contents>
+        <id>dot</id>
+      </contents>
+    </cell>
+    <cell id="cell" description="" y-coord="3" x-coord="1">
+      <contents>
+        <id>dot</id>
+      </contents>
+    </cell>
+    <cell id="cell" description="" y-coord="4" x-coord="1">
+      <contents>
+        <id>dot</id>
+      </contents>
+    </cell>
+    <cell id="cell" description="" y-coord="5" x-coord="1">
+      <contents>
+        <id>dot</id>
+      </contents>
+    </cell>
+    <cell id="cell" description="" y-coord="6" x-coord="1">
+      <contents>
+        <id>pac-horiz</id>
+      </contents>
+    </cell>
+
+
+    <cell id="cell" description="" y-coord="0" x-coord="2">
+      <contents>
+        <id>pac-horiz</id>
+      </contents>
+    </cell>
+    <cell id="cell" description="" y-coord="1" x-coord="2">
+      <contents>
+        <id>dot</id>
+      </contents>
+    </cell>
+    <cell id="cell" description="" y-coord="2" x-coord="2">
+      <contents>
+        <id>pac-top-left</id>
+      </contents>
+    </cell>
+    <cell id="cell" description="" y-coord="3" x-coord="2">
+      <contents>
+        <id>pac-vert</id>
+      </contents>
+    </cell>
+    <cell id="cell" description="" y-coord="4" x-coord="2">
+      <contents>
+        <id>pac-vert-bot</id>
+      </contents>
+    </cell>
+    <cell id="cell" description="" y-coord="5" x-coord="2">
+      <contents>
+        <id>dot</id>
+      </contents>
+    </cell>
+    <cell id="cell" description="" y-coord="6" x-coord="2">
+      <contents>
+        <id>pac-horiz</id>
+      </contents>
+    </cell>
+
+
+    <cell id="cell" description="" y-coord="0" x-coord="3">
+      <contents>
+        <id>pac-horiz</id>
+      </contents>
+    </cell>
+    <cell id="cell" description="" y-coord="1" x-coord="3">
+      <contents>
+        <id>dot</id>
+      </contents>
+    </cell>
+    <cell id="cell" description="" y-coord="2" x-coord="3">
+      <contents>
+        <id>pac-horiz</id>
+      </contents>
+    </cell>
+    <cell id="cell" description="" y-coord="3" x-coord="3">
+      <contents>
+        <id>dot</id>
+      </contents>
+    </cell>
+    <cell id="cell" description="" y-coord="4" x-coord="3">
+      <contents>
+        <id>dot</id>
+      </contents>
+    </cell>
+    <cell id="cell" description="" y-coord="5" x-coord="3">
+      <contents>
+        <id>dot</id>
+      </contents>
+    </cell>
+    <cell id="cell" description="" y-coord="6" x-coord="3">
+      <contents>
+        <id>pac-horiz</id>
+      </contents>
+    </cell>
+
+
+    <cell id="cell" description="" y-coord="0" x-coord="4">
+      <contents>
+        <id>pac-horiz</id>
+      </contents>
+    </cell>
+    <cell id="cell" description="" y-coord="1" x-coord="4">
+      <contents>
+        <id>dot</id>
+      </contents>
+    </cell>
+    <cell id="cell" description="" y-coord="2" x-coord="4">
+      <contents>
+        <id>pac-top-right</id>
+      </contents>
+    </cell>
+    <cell id="cell" description="" y-coord="3" x-coord="4">
+      <contents>
+        <id>pac-vert</id>
+      </contents>
+    </cell>
+    <cell id="cell" description="" y-coord="4" x-coord="4">
+      <contents>
+        <id>pac-vert-bot</id>
+      </contents>
+    </cell>
+    <cell id="cell" description="" y-coord="5" x-coord="4">
+      <contents>
+        <id>dot</id>
+      </contents>
+    </cell>
+    <cell id="cell" description="" y-coord="6" x-coord="4">
+      <contents>
+        <id>pac-horiz</id>
+      </contents>
+    </cell>
+
+
+    <cell id="cell" description="" y-coord="0" x-coord="5">
+      <contents>
+        <id>pac-horiz</id>
+      </contents>
+    </cell>
+    <cell id="cell" description="" y-coord="1" x-coord="5">
+      <contents>
+        <id>dot</id>
+      </contents>
+    </cell>
+    <cell id="cell" description="" y-coord="2" x-coord="5">
+      <contents>
+        <id>dot</id>
+      </contents>
+    </cell>
+    <cell id="cell" description="" y-coord="3" x-coord="5">
+      <contents>
+        <id>dot</id>
+      </contents>
+    </cell>
+    <cell id="cell" description="" y-coord="4" x-coord="5">
+      <contents>
+        <id>dot</id>
+      </contents>
+    </cell>
+    <cell id="cell" description="" y-coord="5" x-coord="5">
+      <contents>
+        <id>dot</id>
+      </contents>
+    </cell>
+    <cell id="cell" description="" y-coord="6" x-coord="5">
+      <contents>
+        <id>pac-horiz</id>
+      </contents>
+    </cell>
+
+    <cell id="cell" description="" y-coord="0" x-coord="6">
+      <contents>
+        <id>pac-top-right</id>
+      </contents>
+    </cell>
+    <cell id="cell" description="" y-coord="1" x-coord="6">
+      <contents>
+        <id>pac-vert</id>
+      </contents>
+    </cell>
+    <cell id="cell" description="" y-coord="2" x-coord="6">
+      <contents>
+        <id>pac-vert-bot</id>
+      </contents>
+    </cell>
+    <cell id="cell" description="" y-coord="3" x-coord="6">
+      <contents>
+        <id>dot</id>
+      </contents>
+    </cell>
+    <cell id="cell" description="" y-coord="4" x-coord="6">
+      <contents>
+        <id>pac-vert-top</id>
+      </contents>
+    </cell>
+    <cell id="cell" description="" y-coord="5" x-coord="6">
+      <contents>
+        <id>pac-vert</id>
+      </contents>
+    </cell>
+    <cell id="cell" description="" y-coord="6" x-coord="6">
+      <contents>
+        <id>pac-bot-right</id>
+      </contents>
+    </cell>
+  </cells>
+</environment>

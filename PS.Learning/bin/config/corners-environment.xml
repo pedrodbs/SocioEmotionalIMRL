@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<environment num-cols="7" num-rows="7">
+  <cell-elements>
+    <cell-element id="tree" description="" reward="0" visible="True" walkable="False" smell="False" image-path="../../../../bin/resources/tree.gif">
+      <color r="0" g="100" b="0" a="255" />
+    </cell-element>
+  </cell-elements>
+  <cells>
+    <cell id="cell" description="" y-coord="0" x-coord="0">
+      <contents>
+        <id>tree</id>
+      </contents>
+    </cell>
+    <cell id="cell" description="" y-coord="1" x-coord="0">
+      <contents>
+        <id>tree</id>
+      </contents>
+    </cell>
+    <cell id="cell" description="" y-coord="2" x-coord="0">
+      <contents>
+        <id>tree</id>
+      </contents>
+    </cell>
+    <cell id="cell" description="" y-coord="3" x-coord="0">
+      <contents>
+        <id>tree</id>
+      </contents>
+    </cell>
+    <cell id="cell" description="" y-coord="4" x-coord="0">
+      <contents>
+        <id>tree</id>
+      </contents>
+    </cell>
+    <cell id="cell" description="" y-coord="5" x-coord="0">
+      <contents>
+        <id>tree</id>
+      </contents>
+    </cell>
+    <cell id="cell" description="" y-coord="6" x-coord="0">
+      <contents>
+        <id>tree</id>
+      </contents>
+    </cell>
+    
+    <cell id="cell" description="" y-coord="0" x-coord="1">
+      <contents>
+        <id>tree</id>
+      </contents>
+    </cell>
+    <cell id="cell" description="" y-coord="1" x-coord="1">
+      <contents />
+    </cell>
+    <cell id="cell" description="" y-coord="2" x-coord="1">
+      <contents />
+    </cell>
+    <cell id="cell" description="" y-coord="3" x-coord="1">
+      <contents>
+        <id>tree</id>
+      </contents>
+    </cell>
+    <cell id="cell" description="" y-coord="4" x-coord="1">
+      <contents />
+    </cell>
+    <cell id="cell" description="" y-coord="5" x-coord="1">
+      <contents />
+    </cell>
+    <cell id="cell" description="" y-coord="6" x-coord="1">
+      <contents>
+        <id>tree</id>
+      </contents>
+    </cell>
+    
+    <cell id="cell" description="" y-coord="0" x-coord="2">
+      <contents>
+        <id>tree</id>
+      </contents>
+    </cell>
+    <cell id="cell" description="" y-coord="1" x-coord="2">
+      <contents />
+    </cell>
+    <cell id="cell" description="" y-coord="2" x-coord="2">
+      <contents />
+    </cell>
+    <cell id="cell" description="" y-coord="3" x-coord="2">
+      <contents>
+        <id>tree</id>
+      </contents>
+    </cell>
+    <cell id="cell" description="" y-coord="4" x-coord="2">
+      <contents />
+    </cell>
+    <cell id="cell" description="" y-coord="5" x-coord="2">
+      <contents />
+    </cell>
+    <cell id="cell" description="" y-coord="6" x-coord="2">
+      <contents>
+        <id>tree</id>
+      </contents>
+    </cell>
+    
+    <cell id="cell" description="" y-coord="0" x-coord="3">
+      <contents>
+        <id>tree</id>
+      </contents>
+    </cell>
+    <cell id="cell" description="" y-coord="1" x-coord="3">
+      <contents />
+    </cell>
+    <cell id="cell" description="" y-coord="2" x-coord="3">
+      <contents>
+        <id>tree</id>
+      </contents>
+    </cell>
+    <cell id="cell" description="" y-coord="3" x-coord="3">
+      <contents>
+        <id>tree</id>
+      </contents>
+    </cell>
+    <cell id="cell" description="" y-coord="4" x-coord="3">
+      <contents />
+    </cell>
+    <cell id="cell" description="" y-coord="5" x-coord="3">
+      <contents>
+        <id>tree</id>
+      </contents>
+    </cell>
+    <cell id="cell" description="" y-coord="6" x-coord="3">
+      <contents>
+        <id>tree</id>
+      </contents>
+    </cell>
+    
+    <cell id="cell" description="" y-coord="0" x-coord="4">
+      <contents>
+        <id>tree</id>
+      </contents>
+    </cell>
+    <cell id="cell" description="" y-coord="1" x-coord="4">
+      <contents />
+    </cell>
+    <cell id="cell" description="" y-coord="2" x-coord="4">
+      <contents />
+    </cell>
+    <cell id="cell" description="" y-coord="3" x-coord="4">
+      <contents>
+        <id>tree</id>
+      </contents>
+    </cell>
+    <cell id="cell" description="" y-coord="4" x-coord="4">
+      <contents />
+    </cell>
+    <cell id="cell" description="" y-coord="5" x-coord="4">
+      <contents />
+    </cell>
+    <cell id="cell" description="" y-coord="6" x-coord="4">
+      <contents>
+        <id>tree</id>
+      </contents>
+    </cell>
+    
+    <cell id="cell" description="" y-coord="0" x-coord="5">
+      <contents>
+        <id>tree</id>
+      </contents>
+    </cell>
+    <cell id="cell" description="" y-coord="1" x-coord="5">
+      <contents />
+    </cell>
+    <cell id="cell" description="" y-coord="2" x-coord="5">
+      <contents />
+    </cell>
+    <cell id="cell" description="" y-coord="3" x-coord="5">
+      <contents />
+    </cell>
+    <cell id="cell" description="" y-coord="4" x-coord="5">
+      <contents />
+    </cell>
+    <cell id="cell" description="" y-coord="5" x-coord="5">
+      <contents />
+    </cell>
+    <cell id="cell" description="" y-coord="6" x-coord="5">
+      <contents>
+        <id>tree</id>
+      </contents>
+    </cell>
+    
+    <cell id="cell" description="" y-coord="0" x-coord="6">
+      <contents>
+        <id>tree</id>
+      </contents>
+    </cell>
+    <cell id="cell" description="" y-coord="1" x-coord="6">
+      <contents>
+        <id>tree</id>
+      </contents>
+    </cell>
+    <cell id="cell" description="" y-coord="2" x-coord="6">
+      <contents>
+        <id>tree</id>
+      </contents>
+    </cell>
+    <cell id="cell" description="" y-coord="3" x-coord="6">
+      <contents>
+        <id>tree</id>
+      </contents>
+    </cell>
+    <cell id="cell" description="" y-coord="4" x-coord="6">
+      <contents>
+        <id>tree</id>
+      </contents>
+    </cell>
+    <cell id="cell" description="" y-coord="5" x-coord="6">
+      <contents>
+        <id>tree</id>
+      </contents>
+    </cell>
+    <cell id="cell" description="" y-coord="6" x-coord="6">
+      <contents>
+        <id>tree</id>
+      </contents>
+    </cell>
+  </cells>
+</environment>

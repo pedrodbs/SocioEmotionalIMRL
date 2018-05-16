@@ -1,0 +1,273 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<environment num-cols="5" num-rows="11">
+  <cell-elements>
+    <cell-element id="wall" reward="0" visible="True" walkable="False" image-path="">
+      <color r="195" g="195" b="195" a="255" />
+    </cell-element>
+    <cell-element id="start-pos" reward="0" visible="True" walkable="True" image-path="">
+      <color r="202" g="226" b="255" a="255" />
+    </cell-element>
+    <cell-element id="food-pos" reward="0" visible="True" walkable="True" image-path="">
+      <color r="255" g="209" b="187" a="255" />
+    </cell-element>
+  </cell-elements>
+  <cells>
+
+    <!--collumn 0-->
+    <cell id="cell" description="" y-coord="0" x-coord="0">
+      <contents>
+        <id>wall</id>
+      </contents>
+    </cell>
+    <cell id="cell" description="" y-coord="1" x-coord="0">
+      <contents>
+        <id>wall</id>
+      </contents>
+    </cell>
+    <cell id="cell" description="" y-coord="2" x-coord="0">
+      <contents>
+        <id>wall</id>
+      </contents>
+    </cell>
+    <cell id="cell" description="" y-coord="3" x-coord="0">
+      <contents>
+        <id>wall</id>
+      </contents>
+    </cell>
+    <cell id="cell" description="" y-coord="4" x-coord="0">
+      <contents>
+        <id>wall</id>
+      </contents>
+    </cell>
+    <cell id="cell" description="" y-coord="5" x-coord="0">
+      <contents>
+        <id>wall</id>
+      </contents>
+    </cell>
+    <cell id="cell" description="" y-coord="6" x-coord="0">
+      <contents>
+        <id>wall</id>
+      </contents>
+    </cell>
+    <cell id="cell" description="" y-coord="7" x-coord="0">
+      <contents>
+        <id>wall</id>
+      </contents>
+    </cell>
+    <cell id="cell" description="" y-coord="8" x-coord="0">
+      <contents>
+        <id>wall</id>
+      </contents>
+    </cell>
+    <cell id="cell" description="" y-coord="9" x-coord="0">
+      <contents>
+        <id>wall</id>
+      </contents>
+    </cell>
+    <cell id="cell" description="" y-coord="10" x-coord="0">
+      <contents>
+        <id>wall</id>
+      </contents>
+    </cell>
+
+    <!--collumn 1-->
+    <cell id="cell" description="" y-coord="0" x-coord="1">
+      <contents>
+        <id>wall</id>
+      </contents>
+    </cell>
+    <cell id="cell" description="" y-coord="1" x-coord="1">
+      <contents />
+    </cell>
+    <cell id="cell" description="" y-coord="2" x-coord="1">
+      <contents />
+    </cell>
+    <cell id="cell" description="" y-coord="3" x-coord="1">
+      <contents />
+    </cell>
+    <cell id="cell" description="" y-coord="4" x-coord="1">
+      <contents />
+    </cell>
+    <cell id="cell" description="" y-coord="5" x-coord="1">
+      <contents />
+    </cell>
+    <cell id="cell" description="" y-coord="6" x-coord="1">
+      <contents />
+    </cell>
+    <cell id="cell" description="" y-coord="7" x-coord="1">
+      <contents />
+    </cell>
+    <cell id="cell" description="" y-coord="8" x-coord="1">
+      <contents />
+    </cell>
+    <cell id="cell" description="" y-coord="9" x-coord="1">
+      <contents />
+    </cell>
+    <cell id="cell" description="" y-coord="10" x-coord="1">
+      <contents>
+        <id>wall</id>
+      </contents>
+    </cell>
+
+
+    <!--collumn 2-->
+    <cell id="cell" description="" y-coord="0" x-coord="2">
+      <contents>
+        <id>wall</id>
+      </contents>
+    </cell>
+    <cell id="cell" description="" y-coord="1" x-coord="2">
+      <contents />
+    </cell>
+    <cell id="cell" description="" y-coord="2" x-coord="2">
+      <contents>
+        <id>wall</id>
+      </contents>
+    </cell>
+    <cell id="cell" description="" y-coord="3" x-coord="2">
+      <contents />
+    </cell>
+    <cell id="cell" description="" y-coord="4" x-coord="2">
+      <contents>
+        <id>wall</id>
+      </contents>
+    </cell>
+    <cell id="cell" description="" y-coord="5" x-coord="2">
+      <contents />
+    </cell>
+    <cell id="cell" description="" y-coord="6" x-coord="2">
+      <contents>
+        <id>wall</id>
+      </contents>
+    </cell>
+    <cell id="cell" description="" y-coord="7" x-coord="2">
+      <contents />
+    </cell>
+    <cell id="cell" description="" y-coord="8" x-coord="2">
+      <contents>
+        <id>wall</id>
+      </contents>
+    </cell>
+    <cell id="cell" description="" y-coord="9" x-coord="2">
+      <contents />
+    </cell>
+    <cell id="cell" description="" y-coord="10" x-coord="2">
+      <contents>
+        <id>wall</id>
+      </contents>
+    </cell>
+
+
+    <!--collumn 3-->
+    <cell id="cell" description="" y-coord="0" x-coord="3">
+      <contents>
+        <id>wall</id>
+      </contents>
+    </cell>
+    <cell id="cell" description="lever-position" y-coord="1" x-coord="3">
+      <contents />
+    </cell>
+    <cell id="cell" description="" y-coord="2" x-coord="3">
+      <contents>
+        <id>wall</id>
+      </contents>
+    </cell>
+    <cell id="cell" description="start-position" y-coord="3" x-coord="3">
+      <contents>
+        <id>start-pos</id>
+      </contents>
+    </cell>
+    <cell id="cell" description="" y-coord="4" x-coord="3">
+      <contents>
+        <id>wall</id>
+      </contents>
+    </cell>
+    <cell id="cell" description="food-location" y-coord="5" x-coord="3">
+      <contents>
+        <id>food-pos</id>
+      </contents>
+    </cell>
+    <cell id="cell" description="" y-coord="6" x-coord="3">
+      <contents>
+        <id>wall</id>
+      </contents>
+    </cell>
+    <cell id="cell" description="start-position" y-coord="7" x-coord="3">
+      <contents>
+        <id>start-pos</id>
+      </contents>
+    </cell>
+    <cell id="cell" description="" y-coord="8" x-coord="3">
+      <contents>
+        <id>wall</id>
+      </contents>
+    </cell>
+    <cell id="cell" description="lever-position" y-coord="9" x-coord="3">
+      <contents />
+    </cell>
+    <cell id="cell" description="" y-coord="10" x-coord="3">
+      <contents>
+        <id>wall</id>
+      </contents>
+    </cell>
+
+
+    <!--collumn 4-->
+    <cell id="cell" description="" y-coord="0" x-coord="4">
+      <contents>
+        <id>wall</id>
+      </contents>
+    </cell>
+    <cell id="cell" description="" y-coord="1" x-coord="4">
+      <contents>
+        <id>wall</id>
+      </contents>
+    </cell>
+    <cell id="cell" description="" y-coord="2" x-coord="4">
+      <contents>
+        <id>wall</id>
+      </contents>
+    </cell>
+    <cell id="cell" description="" y-coord="3" x-coord="4">
+      <contents>
+        <id>wall</id>
+      </contents>
+    </cell>
+    <cell id="cell" description="" y-coord="4" x-coord="4">
+      <contents>
+        <id>wall</id>
+      </contents>
+    </cell>
+    <cell id="cell" description="" y-coord="5" x-coord="4">
+      <contents>
+        <id>wall</id>
+      </contents>
+    </cell>
+    <cell id="cell" description="" y-coord="6" x-coord="4">
+      <contents>
+        <id>wall</id>
+      </contents>
+    </cell>
+    <cell id="cell" description="" y-coord="7" x-coord="4">
+      <contents>
+        <id>wall</id>
+      </contents>
+    </cell>
+    <cell id="cell" description="" y-coord="8" x-coord="4">
+      <contents>
+        <id>wall</id>
+      </contents>
+    </cell>
+    <cell id="cell" description="" y-coord="9" x-coord="4">
+      <contents>
+        <id>wall</id>
+      </contents>
+    </cell>
+    <cell id="cell" description="" y-coord="10" x-coord="4">
+      <contents>
+        <id>wall</id>
+      </contents>
+    </cell>
+  </cells>
+</environment>

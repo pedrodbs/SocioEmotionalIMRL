@@ -1,0 +1,316 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<StochasticTransitionLTM id="test4-3ostates-2nostates-2actions">
+  <states>
+    <state observable-state="1-1-hungerhigh-nofood" non-observable-state="food-3-1" />
+    <state observable-state="2-1-hungerhigh-nofood" non-observable-state="food-3-1" />
+    <state observable-state="3-1-hungerhigh-food" non-observable-state="food-3-1" />
+    <state observable-state="1-2-hungerhigh-nofood" non-observable-state="food-3-1" />
+    <state observable-state="1-3-hungerhigh-nofood" non-observable-state="food-3-1" />
+    <state observable-state="2-3-hungerhigh-nofood" non-observable-state="food-3-1" />
+    <state observable-state="3-3-hungerhigh-nofood" non-observable-state="food-3-1" />
+    <state observable-state="1-4-hungerhigh-nofood" non-observable-state="food-3-1" />
+    <state observable-state="1-5-hungerhigh-nofood" non-observable-state="food-3-1" />
+    <state observable-state="2-5-hungerhigh-nofood" non-observable-state="food-3-1" />
+    <state observable-state="3-5-hungerhigh-nofood" non-observable-state="food-3-1" />
+    
+    <state observable-state="1-1-hungerhigh-nofood" non-observable-state="food-3-3" />
+    <state observable-state="2-1-hungerhigh-nofood" non-observable-state="food-3-3" />
+    <state observable-state="3-1-hungerhigh-nofood" non-observable-state="food-3-3" />
+    <state observable-state="1-2-hungerhigh-nofood" non-observable-state="food-3-3" />
+    <state observable-state="1-3-hungerhigh-nofood" non-observable-state="food-3-3" />
+    <state observable-state="2-3-hungerhigh-nofood" non-observable-state="food-3-3" />
+    <state observable-state="3-3-hungerhigh-food" non-observable-state="food-3-3" />
+    <state observable-state="1-4-hungerhigh-nofood" non-observable-state="food-3-3" />
+    <state observable-state="1-5-hungerhigh-nofood" non-observable-state="food-3-3" />
+    <state observable-state="2-5-hungerhigh-nofood" non-observable-state="food-3-3" />
+    <state observable-state="3-5-hungerhigh-nofood" non-observable-state="food-3-3" />
+
+    <state observable-state="1-1-hungerhigh-nofood" non-observable-state="food-3-5" />
+    <state observable-state="2-1-hungerhigh-nofood" non-observable-state="food-3-5" />
+    <state observable-state="3-1-hungerhigh-nofood" non-observable-state="food-3-5" />
+    <state observable-state="1-2-hungerhigh-nofood" non-observable-state="food-3-5" />
+    <state observable-state="1-3-hungerhigh-nofood" non-observable-state="food-3-5" />
+    <state observable-state="2-3-hungerhigh-nofood" non-observable-state="food-3-5" />
+    <state observable-state="3-3-hungerhigh-nofood" non-observable-state="food-3-5" />
+    <state observable-state="1-4-hungerhigh-nofood" non-observable-state="food-3-5" />
+    <state observable-state="1-5-hungerhigh-nofood" non-observable-state="food-3-5" />
+    <state observable-state="2-5-hungerhigh-nofood" non-observable-state="food-3-5" />
+    <state observable-state="3-5-hungerhigh-food" non-observable-state="food-3-5" />
+
+    <state observable-state="3-1-hungerlow-nofood" non-observable-state="food-3-5" />
+    <state observable-state="3-1-hungerlow-nofood" non-observable-state="food-3-3" />
+    <state observable-state="3-3-hungerlow-nofood" non-observable-state="food-3-5" />
+    <state observable-state="3-3-hungerlow-nofood" non-observable-state="food-3-1" />
+    <state observable-state="3-5-hungerlow-nofood" non-observable-state="food-3-1" />
+    <state observable-state="3-5-hungerlow-nofood" non-observable-state="food-3-3" />
+    
+  </states>
+  <actions>
+    <action id="up" />
+    <action id="down" />
+    <action id="left" />
+    <action id="right" />
+    <action id="eat" />
+  </actions>
+  <rewards>
+    <reward state="3-1-hungerlow-nofoodfood-3-5" action="up" value="1"/>
+    <reward state="3-1-hungerlow-nofoodfood-3-3" action="up" value="1"/>
+    <reward state="3-3-hungerlow-nofoodfood-3-5" action="up" value="1"/>
+    <reward state="3-3-hungerlow-nofoodfood-3-1" action="up" value="1"/>
+    <reward state="3-5-hungerlow-nofoodfood-3-1" action="up" value="1"/>
+    <reward state="3-5-hungerlow-nofoodfood-3-3" action="up" value="1"/>
+
+    <reward state="3-1-hungerlow-nofoodfood-3-5" action="down" value="1"/>
+    <reward state="3-1-hungerlow-nofoodfood-3-3" action="down" value="1"/>
+    <reward state="3-3-hungerlow-nofoodfood-3-5" action="down" value="1"/>
+    <reward state="3-3-hungerlow-nofoodfood-3-1" action="down" value="1"/>
+    <reward state="3-5-hungerlow-nofoodfood-3-1" action="down" value="1"/>
+    <reward state="3-5-hungerlow-nofoodfood-3-3" action="down" value="1"/>
+
+    <reward state="3-1-hungerlow-nofoodfood-3-5" action="left" value="1"/>
+    <reward state="3-1-hungerlow-nofoodfood-3-3" action="left" value="1"/>
+    <reward state="3-3-hungerlow-nofoodfood-3-5" action="left" value="1"/>
+    <reward state="3-3-hungerlow-nofoodfood-3-1" action="left" value="1"/>
+    <reward state="3-5-hungerlow-nofoodfood-3-1" action="left" value="1"/>
+    <reward state="3-5-hungerlow-nofoodfood-3-3" action="left" value="1"/>
+
+    <reward state="3-1-hungerlow-nofoodfood-3-5" action="right" value="1"/>
+    <reward state="3-1-hungerlow-nofoodfood-3-3" action="right" value="1"/>
+    <reward state="3-3-hungerlow-nofoodfood-3-5" action="right" value="1"/>
+    <reward state="3-3-hungerlow-nofoodfood-3-1" action="right" value="1"/>
+    <reward state="3-5-hungerlow-nofoodfood-3-1" action="right" value="1"/>
+    <reward state="3-5-hungerlow-nofoodfood-3-3" action="right" value="1"/>
+
+    <reward state="3-1-hungerlow-nofoodfood-3-5" action="eat" value="1"/>
+    <reward state="3-1-hungerlow-nofoodfood-3-3" action="eat" value="1"/>
+    <reward state="3-3-hungerlow-nofoodfood-3-5" action="eat" value="1"/>
+    <reward state="3-3-hungerlow-nofoodfood-3-1" action="eat" value="1"/>
+    <reward state="3-5-hungerlow-nofoodfood-3-1" action="eat" value="1"/>
+    <reward state="3-5-hungerlow-nofoodfood-3-3" action="eat" value="1"/>
+    
+  </rewards>
+  <transitions>
+    <!--up transitions-->
+    <transition initial-state="1-1-hungerhigh-nofoodfood-3-1" action="up" final-state="1-1-hungerhigh-nofoodfood-3-1" value="1"/>
+    <transition initial-state="2-1-hungerhigh-nofoodfood-3-1" action="up" final-state="2-1-hungerhigh-nofoodfood-3-1" value="1"/>
+    <transition initial-state="3-1-hungerhigh-foodfood-3-1" action="up" final-state="3-1-hungerhigh-foodfood-3-1" value="1"/>
+    <transition initial-state="1-2-hungerhigh-nofoodfood-3-1" action="up" final-state="1-1-hungerhigh-nofoodfood-3-1" value="1"/>
+    <transition initial-state="1-3-hungerhigh-nofoodfood-3-1" action="up" final-state="1-2-hungerhigh-nofoodfood-3-1" value="1"/>
+    <transition initial-state="2-3-hungerhigh-nofoodfood-3-1" action="up" final-state="2-3-hungerhigh-nofoodfood-3-1" value="1"/>
+    <transition initial-state="3-3-hungerhigh-nofoodfood-3-1" action="up" final-state="3-3-hungerhigh-nofoodfood-3-1" value="1"/>
+    <transition initial-state="1-4-hungerhigh-nofoodfood-3-1" action="up" final-state="1-3-hungerhigh-nofoodfood-3-1" value="1"/>
+    <transition initial-state="1-5-hungerhigh-nofoodfood-3-1" action="up" final-state="1-4-hungerhigh-nofoodfood-3-1" value="1"/>
+    <transition initial-state="2-5-hungerhigh-nofoodfood-3-1" action="up" final-state="2-5-hungerhigh-nofoodfood-3-1" value="1"/>
+    <transition initial-state="3-5-hungerhigh-nofoodfood-3-1" action="up" final-state="3-5-hungerhigh-nofoodfood-3-1" value="1"/>
+
+    <transition initial-state="1-1-hungerhigh-nofoodfood-3-3" action="up" final-state="1-1-hungerhigh-nofoodfood-3-3" value="1"/>
+    <transition initial-state="2-1-hungerhigh-nofoodfood-3-3" action="up" final-state="2-1-hungerhigh-nofoodfood-3-3" value="1"/>
+    <transition initial-state="3-1-hungerhigh-nofoodfood-3-3" action="up" final-state="3-1-hungerhigh-nofoodfood-3-3" value="1"/>
+    <transition initial-state="1-2-hungerhigh-nofoodfood-3-3" action="up" final-state="1-1-hungerhigh-nofoodfood-3-3" value="1"/>
+    <transition initial-state="1-3-hungerhigh-nofoodfood-3-3" action="up" final-state="1-2-hungerhigh-nofoodfood-3-3" value="1"/>
+    <transition initial-state="2-3-hungerhigh-nofoodfood-3-3" action="up" final-state="2-3-hungerhigh-nofoodfood-3-3" value="1"/>
+    <transition initial-state="3-3-hungerhigh-foodfood-3-3" action="up" final-state="3-3-hungerhigh-foodfood-3-3" value="1"/>
+    <transition initial-state="1-4-hungerhigh-nofoodfood-3-3" action="up" final-state="1-3-hungerhigh-nofoodfood-3-3" value="1"/>
+    <transition initial-state="1-5-hungerhigh-nofoodfood-3-3" action="up" final-state="1-4-hungerhigh-nofoodfood-3-3" value="1"/>
+    <transition initial-state="2-5-hungerhigh-nofoodfood-3-3" action="up" final-state="2-5-hungerhigh-nofoodfood-3-3" value="1"/>
+    <transition initial-state="3-5-hungerhigh-nofoodfood-3-3" action="up" final-state="3-5-hungerhigh-nofoodfood-3-3" value="1"/>
+
+    <transition initial-state="1-1-hungerhigh-nofoodfood-3-5" action="up" final-state="1-1-hungerhigh-nofoodfood-3-5" value="1"/>
+    <transition initial-state="2-1-hungerhigh-nofoodfood-3-5" action="up" final-state="2-1-hungerhigh-nofoodfood-3-5" value="1"/>
+    <transition initial-state="3-1-hungerhigh-nofoodfood-3-5" action="up" final-state="3-1-hungerhigh-nofoodfood-3-5" value="1"/>
+    <transition initial-state="1-2-hungerhigh-nofoodfood-3-5" action="up" final-state="1-1-hungerhigh-nofoodfood-3-5" value="1"/>
+    <transition initial-state="1-3-hungerhigh-nofoodfood-3-5" action="up" final-state="1-2-hungerhigh-nofoodfood-3-5" value="1"/>
+    <transition initial-state="2-3-hungerhigh-nofoodfood-3-5" action="up" final-state="2-3-hungerhigh-nofoodfood-3-5" value="1"/>
+    <transition initial-state="3-3-hungerhigh-nofoodfood-3-5" action="up" final-state="3-3-hungerhigh-nofoodfood-3-5" value="1"/>
+    <transition initial-state="1-4-hungerhigh-nofoodfood-3-5" action="up" final-state="1-3-hungerhigh-nofoodfood-3-5" value="1"/>
+    <transition initial-state="1-5-hungerhigh-nofoodfood-3-5" action="up" final-state="1-4-hungerhigh-nofoodfood-3-5" value="1"/>
+    <transition initial-state="2-5-hungerhigh-nofoodfood-3-5" action="up" final-state="2-5-hungerhigh-nofoodfood-3-5" value="1"/>
+    <transition initial-state="3-5-hungerhigh-foodfood-3-5" action="up" final-state="3-5-hungerhigh-foodfood-3-5" value="1"/>
+
+    <transition initial-state="3-1-hungerlow-nofoodfood-3-5" action="up" final-state="3-1-hungerhigh-nofoodfood-3-5" value="1"/>
+    <transition initial-state="3-1-hungerlow-nofoodfood-3-3" action="up" final-state="3-1-hungerhigh-nofoodfood-3-3" value="1"/>
+    <transition initial-state="3-3-hungerlow-nofoodfood-3-5" action="up" final-state="3-3-hungerhigh-nofoodfood-3-5" value="1"/>
+    <transition initial-state="3-3-hungerlow-nofoodfood-3-1" action="up" final-state="3-3-hungerhigh-nofoodfood-3-1" value="1"/>
+    <transition initial-state="3-5-hungerlow-nofoodfood-3-1" action="up" final-state="3-5-hungerhigh-nofoodfood-3-1" value="1"/>
+    <transition initial-state="3-5-hungerlow-nofoodfood-3-3" action="up" final-state="3-5-hungerhigh-nofoodfood-3-3" value="1"/>
+
+    <!--down transitions-->
+    <transition initial-state="1-1-hungerhigh-nofoodfood-3-1" action="down" final-state="1-2-hungerhigh-nofoodfood-3-1" value="1"/>
+    <transition initial-state="2-1-hungerhigh-nofoodfood-3-1" action="down" final-state="2-1-hungerhigh-nofoodfood-3-1" value="1"/>
+    <transition initial-state="3-1-hungerhigh-foodfood-3-1" action="down" final-state="3-1-hungerhigh-foodfood-3-1" value="1"/>
+    <transition initial-state="1-2-hungerhigh-nofoodfood-3-1" action="down" final-state="1-3-hungerhigh-nofoodfood-3-1" value="1"/>
+    <transition initial-state="1-3-hungerhigh-nofoodfood-3-1" action="down" final-state="1-4-hungerhigh-nofoodfood-3-1" value="1"/>
+    <transition initial-state="2-3-hungerhigh-nofoodfood-3-1" action="down" final-state="2-3-hungerhigh-nofoodfood-3-1" value="1"/>
+    <transition initial-state="3-3-hungerhigh-nofoodfood-3-1" action="down" final-state="3-3-hungerhigh-nofoodfood-3-1" value="1"/>
+    <transition initial-state="1-4-hungerhigh-nofoodfood-3-1" action="down" final-state="1-5-hungerhigh-nofoodfood-3-1" value="1"/>
+    <transition initial-state="1-5-hungerhigh-nofoodfood-3-1" action="down" final-state="1-5-hungerhigh-nofoodfood-3-1" value="1"/>
+    <transition initial-state="2-5-hungerhigh-nofoodfood-3-1" action="down" final-state="2-5-hungerhigh-nofoodfood-3-1" value="1"/>
+    <transition initial-state="3-5-hungerhigh-nofoodfood-3-1" action="down" final-state="3-5-hungerhigh-nofoodfood-3-1" value="1"/>
+
+    <transition initial-state="1-1-hungerhigh-nofoodfood-3-3" action="down" final-state="1-2-hungerhigh-nofoodfood-3-3" value="1"/>
+    <transition initial-state="2-1-hungerhigh-nofoodfood-3-3" action="down" final-state="2-1-hungerhigh-nofoodfood-3-3" value="1"/>
+    <transition initial-state="3-1-hungerhigh-nofoodfood-3-3" action="down" final-state="3-1-hungerhigh-nofoodfood-3-3" value="1"/>
+    <transition initial-state="1-2-hungerhigh-nofoodfood-3-3" action="down" final-state="1-3-hungerhigh-nofoodfood-3-3" value="1"/>
+    <transition initial-state="1-3-hungerhigh-nofoodfood-3-3" action="down" final-state="1-4-hungerhigh-nofoodfood-3-3" value="1"/>
+    <transition initial-state="2-3-hungerhigh-nofoodfood-3-3" action="down" final-state="2-3-hungerhigh-nofoodfood-3-3" value="1"/>
+    <transition initial-state="3-3-hungerhigh-foodfood-3-3" action="down" final-state="3-3-hungerhigh-foodfood-3-3" value="1"/>
+    <transition initial-state="1-4-hungerhigh-nofoodfood-3-3" action="down" final-state="1-5-hungerhigh-nofoodfood-3-3" value="1"/>
+    <transition initial-state="1-5-hungerhigh-nofoodfood-3-3" action="down" final-state="1-5-hungerhigh-nofoodfood-3-3" value="1"/>
+    <transition initial-state="2-5-hungerhigh-nofoodfood-3-3" action="down" final-state="2-5-hungerhigh-nofoodfood-3-3" value="1"/>
+    <transition initial-state="3-5-hungerhigh-nofoodfood-3-3" action="down" final-state="3-5-hungerhigh-nofoodfood-3-3" value="1"/>
+
+    <transition initial-state="1-1-hungerhigh-nofoodfood-3-5" action="down" final-state="1-2-hungerhigh-nofoodfood-3-5" value="1"/>
+    <transition initial-state="2-1-hungerhigh-nofoodfood-3-5" action="down" final-state="2-1-hungerhigh-nofoodfood-3-5" value="1"/>
+    <transition initial-state="3-1-hungerhigh-nofoodfood-3-5" action="down" final-state="3-1-hungerhigh-nofoodfood-3-5" value="1"/>
+    <transition initial-state="1-2-hungerhigh-nofoodfood-3-5" action="down" final-state="1-3-hungerhigh-nofoodfood-3-5" value="1"/>
+    <transition initial-state="1-3-hungerhigh-nofoodfood-3-5" action="down" final-state="1-4-hungerhigh-nofoodfood-3-5" value="1"/>
+    <transition initial-state="2-3-hungerhigh-nofoodfood-3-5" action="down" final-state="2-3-hungerhigh-nofoodfood-3-5" value="1"/>
+    <transition initial-state="3-3-hungerhigh-nofoodfood-3-5" action="down" final-state="3-3-hungerhigh-nofoodfood-3-5" value="1"/>
+    <transition initial-state="1-4-hungerhigh-nofoodfood-3-5" action="down" final-state="1-5-hungerhigh-nofoodfood-3-5" value="1"/>
+    <transition initial-state="1-5-hungerhigh-nofoodfood-3-5" action="down" final-state="1-5-hungerhigh-nofoodfood-3-5" value="1"/>
+    <transition initial-state="2-5-hungerhigh-nofoodfood-3-5" action="down" final-state="2-5-hungerhigh-nofoodfood-3-5" value="1"/>
+    <transition initial-state="3-5-hungerhigh-foodfood-3-5" action="down" final-state="3-5-hungerhigh-foodfood-3-5" value="1"/>
+
+    <transition initial-state="3-1-hungerlow-nofoodfood-3-5" action="down" final-state="3-1-hungerhigh-nofoodfood-3-5" value="1"/>
+    <transition initial-state="3-1-hungerlow-nofoodfood-3-3" action="down" final-state="3-1-hungerhigh-nofoodfood-3-3" value="1"/>
+    <transition initial-state="3-3-hungerlow-nofoodfood-3-5" action="down" final-state="3-3-hungerhigh-nofoodfood-3-5" value="1"/>
+    <transition initial-state="3-3-hungerlow-nofoodfood-3-1" action="down" final-state="3-3-hungerhigh-nofoodfood-3-1" value="1"/>
+    <transition initial-state="3-5-hungerlow-nofoodfood-3-1" action="down" final-state="3-5-hungerhigh-nofoodfood-3-1" value="1"/>
+    <transition initial-state="3-5-hungerlow-nofoodfood-3-3" action="down" final-state="3-5-hungerhigh-nofoodfood-3-3" value="1"/>
+
+    <!--left transitions-->
+    <transition initial-state="1-1-hungerhigh-nofoodfood-3-1" action="left" final-state="1-1-hungerhigh-nofoodfood-3-1" value="1"/>
+    <transition initial-state="2-1-hungerhigh-nofoodfood-3-1" action="left" final-state="1-1-hungerhigh-nofoodfood-3-1" value="1"/>
+    <transition initial-state="3-1-hungerhigh-foodfood-3-1" action="left" final-state="2-1-hungerhigh-nofoodfood-3-1" value="1"/>
+    <transition initial-state="1-2-hungerhigh-nofoodfood-3-1" action="left" final-state="1-2-hungerhigh-nofoodfood-3-1" value="1"/>
+    <transition initial-state="1-3-hungerhigh-nofoodfood-3-1" action="left" final-state="1-3-hungerhigh-nofoodfood-3-1" value="1"/>
+    <transition initial-state="2-3-hungerhigh-nofoodfood-3-1" action="left" final-state="1-3-hungerhigh-nofoodfood-3-1" value="1"/>
+    <transition initial-state="3-3-hungerhigh-nofoodfood-3-1" action="left" final-state="2-3-hungerhigh-nofoodfood-3-1" value="1"/>
+    <transition initial-state="1-4-hungerhigh-nofoodfood-3-1" action="left" final-state="1-4-hungerhigh-nofoodfood-3-1" value="1"/>
+    <transition initial-state="1-5-hungerhigh-nofoodfood-3-1" action="left" final-state="1-5-hungerhigh-nofoodfood-3-1" value="1"/>
+    <transition initial-state="2-5-hungerhigh-nofoodfood-3-1" action="left" final-state="1-5-hungerhigh-nofoodfood-3-1" value="1"/>
+    <transition initial-state="3-5-hungerhigh-nofoodfood-3-1" action="left" final-state="2-5-hungerhigh-nofoodfood-3-1" value="1"/>
+
+    <transition initial-state="1-1-hungerhigh-nofoodfood-3-3" action="left" final-state="1-1-hungerhigh-nofoodfood-3-3" value="1"/>
+    <transition initial-state="2-1-hungerhigh-nofoodfood-3-3" action="left" final-state="1-1-hungerhigh-nofoodfood-3-3" value="1"/>
+    <transition initial-state="3-1-hungerhigh-nofoodfood-3-3" action="left" final-state="2-1-hungerhigh-nofoodfood-3-3" value="1"/>
+    <transition initial-state="1-2-hungerhigh-nofoodfood-3-3" action="left" final-state="1-2-hungerhigh-nofoodfood-3-3" value="1"/>
+    <transition initial-state="1-3-hungerhigh-nofoodfood-3-3" action="left" final-state="1-3-hungerhigh-nofoodfood-3-3" value="1"/>
+    <transition initial-state="2-3-hungerhigh-nofoodfood-3-3" action="left" final-state="1-3-hungerhigh-nofoodfood-3-3" value="1"/>
+    <transition initial-state="3-3-hungerhigh-foodfood-3-3" action="left" final-state="2-3-hungerhigh-nofoodfood-3-3" value="1"/>
+    <transition initial-state="1-4-hungerhigh-nofoodfood-3-3" action="left" final-state="1-4-hungerhigh-nofoodfood-3-3" value="1"/>
+    <transition initial-state="1-5-hungerhigh-nofoodfood-3-3" action="left" final-state="1-5-hungerhigh-nofoodfood-3-3" value="1"/>
+    <transition initial-state="2-5-hungerhigh-nofoodfood-3-3" action="left" final-state="1-5-hungerhigh-nofoodfood-3-3" value="1"/>
+    <transition initial-state="3-5-hungerhigh-nofoodfood-3-3" action="left" final-state="2-5-hungerhigh-nofoodfood-3-3" value="1"/>
+
+    <transition initial-state="1-1-hungerhigh-nofoodfood-3-5" action="left" final-state="1-1-hungerhigh-nofoodfood-3-5" value="1"/>
+    <transition initial-state="2-1-hungerhigh-nofoodfood-3-5" action="left" final-state="1-1-hungerhigh-nofoodfood-3-5" value="1"/>
+    <transition initial-state="3-1-hungerhigh-nofoodfood-3-5" action="left" final-state="2-1-hungerhigh-nofoodfood-3-5" value="1"/>
+    <transition initial-state="1-2-hungerhigh-nofoodfood-3-5" action="left" final-state="1-2-hungerhigh-nofoodfood-3-5" value="1"/>
+    <transition initial-state="1-3-hungerhigh-nofoodfood-3-5" action="left" final-state="1-3-hungerhigh-nofoodfood-3-5" value="1"/>
+    <transition initial-state="2-3-hungerhigh-nofoodfood-3-5" action="left" final-state="1-3-hungerhigh-nofoodfood-3-5" value="1"/>
+    <transition initial-state="3-3-hungerhigh-nofoodfood-3-5" action="left" final-state="2-3-hungerhigh-nofoodfood-3-5" value="1"/>
+    <transition initial-state="1-4-hungerhigh-nofoodfood-3-5" action="left" final-state="1-4-hungerhigh-nofoodfood-3-5" value="1"/>
+    <transition initial-state="1-5-hungerhigh-nofoodfood-3-5" action="left" final-state="1-5-hungerhigh-nofoodfood-3-5" value="1"/>
+    <transition initial-state="2-5-hungerhigh-nofoodfood-3-5" action="left" final-state="1-5-hungerhigh-nofoodfood-3-5" value="1"/>
+    <transition initial-state="3-5-hungerhigh-foodfood-3-5" action="left" final-state="2-5-hungerhigh-nofoodfood-3-5" value="1"/>
+
+    <transition initial-state="3-1-hungerlow-nofoodfood-3-5" action="left" final-state="2-1-hungerhigh-nofoodfood-3-5" value="1"/>
+    <transition initial-state="3-1-hungerlow-nofoodfood-3-3" action="left" final-state="2-1-hungerhigh-nofoodfood-3-3" value="1"/>
+    <transition initial-state="3-3-hungerlow-nofoodfood-3-5" action="left" final-state="2-3-hungerhigh-nofoodfood-3-5" value="1"/>
+    <transition initial-state="3-3-hungerlow-nofoodfood-3-1" action="left" final-state="2-3-hungerhigh-nofoodfood-3-1" value="1"/>
+    <transition initial-state="3-5-hungerlow-nofoodfood-3-1" action="left" final-state="2-5-hungerhigh-nofoodfood-3-1" value="1"/>
+    <transition initial-state="3-5-hungerlow-nofoodfood-3-3" action="left" final-state="2-5-hungerhigh-nofoodfood-3-3" value="1"/>
+
+    <!--right transitions-->
+    <transition initial-state="1-1-hungerhigh-nofoodfood-3-1" action="right" final-state="2-1-hungerhigh-nofoodfood-3-1" value="1"/>
+    <transition initial-state="2-1-hungerhigh-nofoodfood-3-1" action="right" final-state="3-1-hungerhigh-foodfood-3-1" value="1"/>
+    <transition initial-state="3-1-hungerhigh-foodfood-3-1" action="right" final-state="3-1-hungerhigh-foodfood-3-1" value="1"/>
+    <transition initial-state="1-2-hungerhigh-nofoodfood-3-1" action="right" final-state="1-2-hungerhigh-nofoodfood-3-1" value="1"/>
+    <transition initial-state="1-3-hungerhigh-nofoodfood-3-1" action="right" final-state="2-3-hungerhigh-nofoodfood-3-1" value="1"/>
+    <transition initial-state="2-3-hungerhigh-nofoodfood-3-1" action="right" final-state="3-3-hungerhigh-nofoodfood-3-1" value="1"/>
+    <transition initial-state="3-3-hungerhigh-nofoodfood-3-1" action="right" final-state="3-3-hungerhigh-nofoodfood-3-1" value="1"/>
+    <transition initial-state="1-4-hungerhigh-nofoodfood-3-1" action="right" final-state="1-4-hungerhigh-nofoodfood-3-1" value="1"/>
+    <transition initial-state="1-5-hungerhigh-nofoodfood-3-1" action="right" final-state="2-5-hungerhigh-nofoodfood-3-1" value="1"/>
+    <transition initial-state="2-5-hungerhigh-nofoodfood-3-1" action="right" final-state="3-5-hungerhigh-nofoodfood-3-1" value="1"/>
+    <transition initial-state="3-5-hungerhigh-nofoodfood-3-1" action="right" final-state="3-5-hungerhigh-nofoodfood-3-1" value="1"/>
+
+    <transition initial-state="1-1-hungerhigh-nofoodfood-3-3" action="right" final-state="2-1-hungerhigh-nofoodfood-3-3" value="1"/>
+    <transition initial-state="2-1-hungerhigh-nofoodfood-3-3" action="right" final-state="3-1-hungerhigh-nofoodfood-3-3" value="1"/>
+    <transition initial-state="3-1-hungerhigh-nofoodfood-3-3" action="right" final-state="3-1-hungerhigh-nofoodfood-3-3" value="1"/>
+    <transition initial-state="1-2-hungerhigh-nofoodfood-3-3" action="right" final-state="1-2-hungerhigh-nofoodfood-3-3" value="1"/>
+    <transition initial-state="1-3-hungerhigh-nofoodfood-3-3" action="right" final-state="2-3-hungerhigh-nofoodfood-3-3" value="1"/>
+    <transition initial-state="2-3-hungerhigh-nofoodfood-3-3" action="right" final-state="3-3-hungerhigh-foodfood-3-3" value="1"/>
+    <transition initial-state="3-3-hungerhigh-foodfood-3-3" action="right" final-state="3-3-hungerhigh-foodfood-3-3" value="1"/>
+    <transition initial-state="1-4-hungerhigh-nofoodfood-3-3" action="right" final-state="1-4-hungerhigh-nofoodfood-3-3" value="1"/>
+    <transition initial-state="1-5-hungerhigh-nofoodfood-3-3" action="right" final-state="2-5-hungerhigh-nofoodfood-3-3" value="1"/>
+    <transition initial-state="2-5-hungerhigh-nofoodfood-3-3" action="right" final-state="3-5-hungerhigh-nofoodfood-3-3" value="1"/>
+    <transition initial-state="3-5-hungerhigh-nofoodfood-3-3" action="right" final-state="3-5-hungerhigh-nofoodfood-3-3" value="1"/>
+
+    <transition initial-state="1-1-hungerhigh-nofoodfood-3-5" action="right" final-state="2-1-hungerhigh-nofoodfood-3-5" value="1"/>
+    <transition initial-state="2-1-hungerhigh-nofoodfood-3-5" action="right" final-state="3-1-hungerhigh-nofoodfood-3-5" value="1"/>
+    <transition initial-state="3-1-hungerhigh-nofoodfood-3-5" action="right" final-state="3-1-hungerhigh-nofoodfood-3-5" value="1"/>
+    <transition initial-state="1-2-hungerhigh-nofoodfood-3-5" action="right" final-state="1-2-hungerhigh-nofoodfood-3-5" value="1"/>
+    <transition initial-state="1-3-hungerhigh-nofoodfood-3-5" action="right" final-state="2-3-hungerhigh-nofoodfood-3-5" value="1"/>
+    <transition initial-state="2-3-hungerhigh-nofoodfood-3-5" action="right" final-state="3-3-hungerhigh-nofoodfood-3-5" value="1"/>
+    <transition initial-state="3-3-hungerhigh-nofoodfood-3-5" action="right" final-state="3-3-hungerhigh-nofoodfood-3-5" value="1"/>
+    <transition initial-state="1-4-hungerhigh-nofoodfood-3-5" action="right" final-state="1-4-hungerhigh-nofoodfood-3-5" value="1"/>
+    <transition initial-state="1-5-hungerhigh-nofoodfood-3-5" action="right" final-state="2-5-hungerhigh-nofoodfood-3-5" value="1"/>
+    <transition initial-state="2-5-hungerhigh-nofoodfood-3-5" action="right" final-state="3-5-hungerhigh-foodfood-3-5" value="1"/>
+    <transition initial-state="3-5-hungerhigh-foodfood-3-5" action="right" final-state="3-5-hungerhigh-foodfood-3-5" value="1"/>
+
+    <transition initial-state="3-1-hungerlow-nofoodfood-3-5" action="right" final-state="3-1-hungerhigh-nofoodfood-3-5" value="1"/>
+    <transition initial-state="3-1-hungerlow-nofoodfood-3-3" action="right" final-state="3-1-hungerhigh-nofoodfood-3-3" value="1"/>
+    <transition initial-state="3-3-hungerlow-nofoodfood-3-5" action="right" final-state="3-3-hungerhigh-nofoodfood-3-5" value="1"/>
+    <transition initial-state="3-3-hungerlow-nofoodfood-3-1" action="right" final-state="3-3-hungerhigh-nofoodfood-3-1" value="1"/>
+    <transition initial-state="3-5-hungerlow-nofoodfood-3-1" action="right" final-state="3-5-hungerhigh-nofoodfood-3-1" value="1"/>
+    <transition initial-state="3-5-hungerlow-nofoodfood-3-3" action="right" final-state="3-5-hungerhigh-nofoodfood-3-3" value="1"/>
+
+    <!--eat transitions-->
+    <transition initial-state="1-1-hungerhigh-nofoodfood-3-1" action="eat" final-state="1-1-hungerhigh-nofoodfood-3-1" value="1"/>
+    <transition initial-state="2-1-hungerhigh-nofoodfood-3-1" action="eat" final-state="2-1-hungerhigh-nofoodfood-3-1" value="1"/>
+    <transition initial-state="3-1-hungerhigh-foodfood-3-1" action="eat" final-state="3-1-hungerlow-nofoodfood-3-3" value="0.5"/>
+    <transition initial-state="3-1-hungerhigh-foodfood-3-1" action="eat" final-state="3-1-hungerlow-nofoodfood-3-5" value="0.5"/>
+    <transition initial-state="1-2-hungerhigh-nofoodfood-3-1" action="eat" final-state="1-2-hungerhigh-nofoodfood-3-1" value="1"/>
+    <transition initial-state="1-3-hungerhigh-nofoodfood-3-1" action="eat" final-state="1-3-hungerhigh-nofoodfood-3-1" value="1"/>
+    <transition initial-state="2-3-hungerhigh-nofoodfood-3-1" action="eat" final-state="2-3-hungerhigh-nofoodfood-3-1" value="1"/>
+    <transition initial-state="3-3-hungerhigh-nofoodfood-3-1" action="eat" final-state="3-3-hungerhigh-nofoodfood-3-1" value="1"/>
+    <transition initial-state="1-4-hungerhigh-nofoodfood-3-1" action="eat" final-state="1-4-hungerhigh-nofoodfood-3-1" value="1"/>
+    <transition initial-state="1-5-hungerhigh-nofoodfood-3-1" action="eat" final-state="1-5-hungerhigh-nofoodfood-3-1" value="1"/>
+    <transition initial-state="2-5-hungerhigh-nofoodfood-3-1" action="eat" final-state="2-5-hungerhigh-nofoodfood-3-1" value="1"/>
+    <transition initial-state="3-5-hungerhigh-nofoodfood-3-1" action="eat" final-state="3-5-hungerhigh-nofoodfood-3-1" value="1"/>
+
+    <transition initial-state="1-1-hungerhigh-nofoodfood-3-3" action="eat" final-state="1-1-hungerhigh-nofoodfood-3-3" value="1"/>
+    <transition initial-state="2-1-hungerhigh-nofoodfood-3-3" action="eat" final-state="2-1-hungerhigh-nofoodfood-3-3" value="1"/>
+    <transition initial-state="3-1-hungerhigh-nofoodfood-3-3" action="eat" final-state="3-1-hungerhigh-nofoodfood-3-3" value="1"/>
+    <transition initial-state="1-2-hungerhigh-nofoodfood-3-3" action="eat" final-state="1-2-hungerhigh-nofoodfood-3-3" value="1"/>
+    <transition initial-state="1-3-hungerhigh-nofoodfood-3-3" action="eat" final-state="1-3-hungerhigh-nofoodfood-3-3" value="1"/>
+    <transition initial-state="2-3-hungerhigh-nofoodfood-3-3" action="eat" final-state="2-3-hungerhigh-nofoodfood-3-3" value="1"/>
+    <transition initial-state="3-3-hungerhigh-foodfood-3-3" action="eat" final-state="3-3-hungerlow-nofoodfood-3-1" value="0.5"/>
+    <transition initial-state="3-3-hungerhigh-foodfood-3-3" action="eat" final-state="3-3-hungerlow-nofoodfood-3-5" value="0.5"/>
+    <transition initial-state="1-4-hungerhigh-nofoodfood-3-3" action="eat" final-state="1-4-hungerhigh-nofoodfood-3-3" value="1"/>
+    <transition initial-state="1-5-hungerhigh-nofoodfood-3-3" action="eat" final-state="1-5-hungerhigh-nofoodfood-3-3" value="1"/>
+    <transition initial-state="2-5-hungerhigh-nofoodfood-3-3" action="eat" final-state="2-5-hungerhigh-nofoodfood-3-3" value="1"/>
+    <transition initial-state="3-5-hungerhigh-nofoodfood-3-3" action="eat" final-state="3-5-hungerhigh-nofoodfood-3-3" value="1"/>
+
+    <transition initial-state="1-1-hungerhigh-nofoodfood-3-5" action="eat" final-state="1-1-hungerhigh-nofoodfood-3-5" value="1"/>
+    <transition initial-state="2-1-hungerhigh-nofoodfood-3-5" action="eat" final-state="2-1-hungerhigh-nofoodfood-3-5" value="1"/>
+    <transition initial-state="3-1-hungerhigh-nofoodfood-3-5" action="eat" final-state="3-1-hungerhigh-nofoodfood-3-5" value="1"/>
+    <transition initial-state="1-2-hungerhigh-nofoodfood-3-5" action="eat" final-state="1-2-hungerhigh-nofoodfood-3-5" value="1"/>
+    <transition initial-state="1-3-hungerhigh-nofoodfood-3-5" action="eat" final-state="1-3-hungerhigh-nofoodfood-3-5" value="1"/>
+    <transition initial-state="2-3-hungerhigh-nofoodfood-3-5" action="eat" final-state="2-3-hungerhigh-nofoodfood-3-5" value="1"/>
+    <transition initial-state="3-3-hungerhigh-nofoodfood-3-5" action="eat" final-state="3-3-hungerhigh-nofoodfood-3-5" value="1"/>
+    <transition initial-state="1-4-hungerhigh-nofoodfood-3-5" action="eat" final-state="1-4-hungerhigh-nofoodfood-3-5" value="1"/>
+    <transition initial-state="1-5-hungerhigh-nofoodfood-3-5" action="eat" final-state="1-5-hungerhigh-nofoodfood-3-5" value="1"/>
+    <transition initial-state="2-5-hungerhigh-nofoodfood-3-5" action="eat" final-state="2-5-hungerhigh-nofoodfood-3-5" value="1"/>
+    <transition initial-state="3-5-hungerhigh-foodfood-3-5" action="eat" final-state="3-5-hungerlow-nofoodfood-3-1" value="0.5"/>
+    <transition initial-state="3-5-hungerhigh-foodfood-3-5" action="eat" final-state="3-5-hungerlow-nofoodfood-3-3" value="0.5"/>
+
+    <transition initial-state="3-1-hungerlow-nofoodfood-3-5" action="eat" final-state="3-1-hungerhigh-nofoodfood-3-5" value="1"/>
+    <transition initial-state="3-1-hungerlow-nofoodfood-3-3" action="eat" final-state="3-1-hungerhigh-nofoodfood-3-3" value="1"/>
+    <transition initial-state="3-3-hungerlow-nofoodfood-3-5" action="eat" final-state="3-3-hungerhigh-nofoodfood-3-5" value="1"/>
+    <transition initial-state="3-3-hungerlow-nofoodfood-3-1" action="eat" final-state="3-3-hungerhigh-nofoodfood-3-1" value="1"/>
+    <transition initial-state="3-5-hungerlow-nofoodfood-3-1" action="eat" final-state="3-5-hungerhigh-nofoodfood-3-1" value="1"/>
+    <transition initial-state="3-5-hungerlow-nofoodfood-3-3" action="eat" final-state="3-5-hungerhigh-nofoodfood-3-3" value="1"/>
+  </transitions>
+</StochasticTransitionLTM>
