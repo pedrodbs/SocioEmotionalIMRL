@@ -1,5 +1,4 @@
-License (MIT)
-===================================
+MIT License
 
 Copyright (c) 2018 Pedro Sequeira
 
